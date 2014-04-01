@@ -43,8 +43,9 @@
   CGContextRef context = UIGraphicsGetCurrentContext();
   
   UIWindow *keyWindow = [[UIApplication sharedApplication] keyWindow];
-  
-  BOOL draw = [keyWindow respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)];
+
+  // iOS 7+ selector
+  BOOL canDrawViewHierarchyInRect = [keyWindow respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)];
   
   // Iterate over every window from back to front
   for (UIWindow *window in [LPTouchUtils applicationWindows]) {
@@ -52,7 +53,7 @@
       // -renderInContext: renders in the coordinate space of the layer,
       // so we must first apply the layer's geometry to the graphics context
       
-      if (draw) {
+      if (canDrawViewHierarchyInRect) {
         [window drawViewHierarchyInRect:[window bounds] afterScreenUpdates:YES];
       } else {
         CGContextSaveGState(context);
