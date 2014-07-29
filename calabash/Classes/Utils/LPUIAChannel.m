@@ -63,8 +63,8 @@ const static NSTimeInterval LPUIAChannelUIADelay = 0.1;
 
 // todo LPUIAChannel.m [super dealloc] should be called _last_
 - (void) dealloc {
-  [super dealloc];
   dispatch_release(_uiaQueue);
+  [super dealloc];
 }
 
 
