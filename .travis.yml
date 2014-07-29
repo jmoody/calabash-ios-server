@@ -1,7 +1,7 @@
 language: objective-c
 
 script:
-  - cd scripts && make-framework.rb
+  - cd scripts && ruby make-framework.rb
   - make
 
 rvm:
