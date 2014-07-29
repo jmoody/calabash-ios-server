@@ -3,6 +3,7 @@ language: objective-c
 script:
   - cd scripts && ruby make-framework.rb
   - cd .. && make
+  - ./build-frank.sh
 
 rvm:
   - 2.1.1
