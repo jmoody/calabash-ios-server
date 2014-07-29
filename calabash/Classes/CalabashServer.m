@@ -20,7 +20,8 @@
 #import "LPExitRoute.h"
 #import "LPVersionRoute.h"
 #import "LPConditionRoute.h"
-#import "LPUIARoute.h"
+#import "LPUIARouteUserPrefs.h"
+#import "LPUIARouteHostCat.h"
 #import "LPUIATapRoute.h"
 #import "LPKeyboardRoute.h"
 #import "LPLocationRoute.h"
@@ -105,9 +106,13 @@
     [LPRouter addRoute:keyboard forPath:@"keyboard"];
     [keyboard release];
 
-    LPUIARoute *uia = [LPUIARoute new];
-    [LPRouter addRoute:uia forPath:@"uia"];
-    [uia release];
+    LPUIARouteUserPrefs *uiaFast = [LPUIARouteUserPrefs new];
+    [LPRouter addRoute:uiaFast forPath:@"uia_fast"];
+    [uiaFast release];
+
+    LPUIARouteHostCat *uiaHostCat = [LPUIARouteHostCat new];
+    [LPRouter addRoute:uiaHostCat forPath:@"uia_host_cat"];
+    [uiaHostCat release];
 
     LPUIATapRoute *uiaTap = [LPUIATapRoute new];
     [LPRouter addRoute:uiaTap forPath:@"uia-tap"];

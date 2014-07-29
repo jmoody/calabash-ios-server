@@ -50,7 +50,7 @@
 		B1135831197F0C41004B16F4 /* LPCJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FDE514B6DB2B002A744C /* LPCJSONSerializer.m */; };
 		B1135832197F0C73004B16F4 /* LPCDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FD8C14B6DAFB002A744C /* LPCDataScanner.m */; };
 		B1135833197F0C92004B16F4 /* LPJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FE0D14B6DB2B002A744C /* LPJSONUtils.m */; };
-		B1135837197F10B7004B16F4 /* LPUIARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARoute.m */; };
+		B1135837197F10B7004B16F4 /* LPUIARouteUserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARouteUserPrefs.m */; };
 		B1135839197F12CF004B16F4 /* LPGenericAsyncRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B16321F315BC1ECD00408364 /* LPGenericAsyncRoute.m */; };
 		B113583A197F1311004B16F4 /* LPHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = B116C9B514E6565500663205 /* LPHTTPConnection.m */; };
 		B113583B197F1351004B16F4 /* LPHTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B116C9B314E6565500663205 /* LPHTTPAuthenticationRequest.m */; };
@@ -111,7 +111,7 @@
 		F5091BF218C4E1D700C85307 /* LPSetTextOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FDCB14B6DB2B002A744C /* LPSetTextOperation.m */; };
 		F5091BF318C4E1D700C85307 /* LPUIAChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F279AE183D5B3000A922BC /* LPUIAChannel.m */; };
 		F5091BF418C4E1D700C85307 /* LPRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FE8714B6DBAC002A744C /* LPRecorder.m */; };
-		F5091BF518C4E1D700C85307 /* LPUIARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARoute.m */; };
+		F5091BF518C4E1D700C85307 /* LPUIARouteUserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARouteUserPrefs.m */; };
 		F5091BF618C4E1D700C85307 /* LPUserPrefRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CC15C06CB500BBE2BE /* LPUserPrefRoute.m */; };
 		F5091BF718C4E1D700C85307 /* LPKeyboardRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B16321F715BC200300408364 /* LPKeyboardRoute.m */; };
 		F5091BF818C4E1D700C85307 /* LPGenericAsyncRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B16321F315BC1ECD00408364 /* LPGenericAsyncRoute.m */; };
@@ -162,6 +162,11 @@
 		F5091C2F18C4E1D700C85307 /* CalabashServer.h in Headers */ = {isa = PBXBuildFile; fileRef = B184FD8814B6DAE1002A744C /* CalabashServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5091C3F18C4E1D700C85307 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17E757A15D434D00066550B /* CFNetwork.framework */; };
 		F5091C4018C4E1D700C85307 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B121E79714B6D9FB0034C6A9 /* Foundation.framework */; };
+		F51725901985223300705621 /* LPUIARouteHostCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F517258E1985223300705621 /* LPUIARouteHostCat.m */; };
+		F51725911985223300705621 /* LPUIARouteHostCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F517258E1985223300705621 /* LPUIARouteHostCat.m */; };
+		F51725921985223300705621 /* LPUIARouteHostCat.h in Headers */ = {isa = PBXBuildFile; fileRef = F517258F1985223300705621 /* LPUIARouteHostCat.h */; };
+		F51725931985223300705621 /* LPUIARouteHostCat.h in Headers */ = {isa = PBXBuildFile; fileRef = F517258F1985223300705621 /* LPUIARouteHostCat.h */; };
+		F5172594198522C500705621 /* LPUIARouteHostCat.m in Sources */ = {isa = PBXBuildFile; fileRef = F517258E1985223300705621 /* LPUIARouteHostCat.m */; };
 		F537397318E5200C004133FA /* LPVersionRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = B153F55A15949F3D00867E12 /* LPVersionRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F537397418E52014004133FA /* LPVersionRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = B153F55A15949F3D00867E12 /* LPVersionRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F537398D18E5253B004133FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B121E79714B6D9FB0034C6A9 /* Foundation.framework */; };
@@ -193,7 +198,7 @@
 		F5821A1018C4E27400293508 /* LPSetTextOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FDCB14B6DB2B002A744C /* LPSetTextOperation.m */; };
 		F5821A1118C4E27400293508 /* LPUIAChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F279AE183D5B3000A922BC /* LPUIAChannel.m */; };
 		F5821A1218C4E27400293508 /* LPRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = B184FE8714B6DBAC002A744C /* LPRecorder.m */; };
-		F5821A1318C4E27400293508 /* LPUIARoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARoute.m */; };
+		F5821A1318C4E27400293508 /* LPUIARouteUserPrefs.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CA15C06CB500BBE2BE /* LPUIARouteUserPrefs.m */; };
 		F5821A1418C4E27400293508 /* LPUserPrefRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DDE6CC15C06CB500BBE2BE /* LPUserPrefRoute.m */; };
 		F5821A1518C4E27400293508 /* LPKeyboardRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B16321F715BC200300408364 /* LPKeyboardRoute.m */; };
 		F5821A1618C4E27400293508 /* LPGenericAsyncRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B16321F315BC1ECD00408364 /* LPGenericAsyncRoute.m */; };
@@ -448,8 +453,8 @@
 		B1B19DC716D162CF00D3D80B /* UIScriptASTVisibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScriptASTVisibility.m; sourceTree = "<group>"; };
 		B1CED0FA183E9551004793B9 /* LPLocationRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPLocationRoute.m; sourceTree = "<group>"; };
 		B1CED0FC183E9562004793B9 /* LPLocationRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPLocationRoute.h; sourceTree = "<group>"; };
-		B1DDE6C915C06CB500BBE2BE /* LPUIARoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPUIARoute.h; sourceTree = "<group>"; };
-		B1DDE6CA15C06CB500BBE2BE /* LPUIARoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPUIARoute.m; sourceTree = "<group>"; };
+		B1DDE6C915C06CB500BBE2BE /* LPUIARouteUserPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPUIARouteUserPrefs.h; sourceTree = "<group>"; };
+		B1DDE6CA15C06CB500BBE2BE /* LPUIARouteUserPrefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPUIARouteUserPrefs.m; sourceTree = "<group>"; };
 		B1DDE6CB15C06CB500BBE2BE /* LPUserPrefRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPUserPrefRoute.h; sourceTree = "<group>"; };
 		B1DDE6CC15C06CB500BBE2BE /* LPUserPrefRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPUserPrefRoute.m; sourceTree = "<group>"; };
 		B1DDE6D115C0701D00BBE2BE /* UIAutomation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAutomation.h; sourceTree = "<group>"; };
@@ -469,6 +474,8 @@
 		B1FF22B715CF002500F3A17B /* MKPolylineView+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKPolylineView+Test.m"; sourceTree = "<group>"; };
 		F500459D17D249D000B72386 /* LPGitVersionDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPGitVersionDefines.h; sourceTree = "<group>"; };
 		F5091C4618C4E1D700C85307 /* libcalabash-device.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libcalabash-device.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F517258E1985223300705621 /* LPUIARouteHostCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPUIARouteHostCat.m; sourceTree = "<group>"; };
+		F517258F1985223300705621 /* LPUIARouteHostCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPUIARouteHostCat.h; sourceTree = "<group>"; };
 		F537398C18E5253B004133FA /* version */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = version; sourceTree = BUILT_PRODUCTS_DIR; };
 		F537399918E6E0BE004133FA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F55A350F17CF8F8F0001E8B4 /* LPDatePickerOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDatePickerOperation.h; sourceTree = "<group>"; };
@@ -766,6 +773,8 @@
 		B184FDD014B6DB2B002A744C /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				F517258F1985223300705621 /* LPUIARouteHostCat.h */,
+				F517258E1985223300705621 /* LPUIARouteHostCat.m */,
 				F55D412018C9130100813F78 /* LPKeychainRoute.h */,
 				F55D412118C9130100813F78 /* LPKeychainRoute.m */,
 				B12DCD86189A998400F8DF87 /* LPDebugRoute.h */,
@@ -774,8 +783,8 @@
 				B1EBF08516EE63A000AE4D40 /* LPAppPropertyRoute.m */,
 				B1EBF08616EE63A000AE4D40 /* LPQueryLogRoute.h */,
 				B1EBF08716EE63A000AE4D40 /* LPQueryLogRoute.m */,
-				B1DDE6C915C06CB500BBE2BE /* LPUIARoute.h */,
-				B1DDE6CA15C06CB500BBE2BE /* LPUIARoute.m */,
+				B1DDE6C915C06CB500BBE2BE /* LPUIARouteUserPrefs.h */,
+				B1DDE6CA15C06CB500BBE2BE /* LPUIARouteUserPrefs.m */,
 				B164575618FDCE4900CAA25A /* LPUIATapRoute.h */,
 				B164575518FDCE4900CAA25A /* LPUIATapRoute.m */,
 				B1CED0FC183E9562004793B9 /* LPLocationRoute.h */,
@@ -970,6 +979,7 @@
 				F59C5CF818E0BB1A0087B51D /* LPRoute.h in Headers */,
 				F59C5CF918E0BB290087B51D /* LPRouter.h in Headers */,
 				F59C5CFA18E0BBAE0087B51D /* LPHTTPResponse.h in Headers */,
+				F51725921985223300705621 /* LPUIARouteHostCat.h in Headers */,
 				F59C5CFB18E0BBAE0087B51D /* LPHTTPAsyncFileResponse.h in Headers */,
 				B164575818FDCE4900CAA25A /* LPUIATapRoute.h in Headers */,
 				F59C5CFC18E0BBAE0087B51D /* LPHTTPDataResponse.h in Headers */,
@@ -987,6 +997,7 @@
 				F59C5D0118E0C1D60087B51D /* LPRoute.h in Headers */,
 				F59C5D0218E0C1D90087B51D /* LPRouter.h in Headers */,
 				F59C5D0318E0C1DF0087B51D /* LPHTTPResponse.h in Headers */,
+				F51725931985223300705621 /* LPUIARouteHostCat.h in Headers */,
 				F59C5D0518E0C1EA0087B51D /* LPHTTPDataResponse.h in Headers */,
 				B164575C18FDD60B00CAA25A /* LPUIATapRoute.h in Headers */,
 				F59C5D0418E0C1E60087B51D /* LPHTTPAsyncFileResponse.h in Headers */,
@@ -1240,9 +1251,10 @@
 				B113582F197F0C41004B16F4 /* LPCJSONDeserializer.m in Sources */,
 				B1135845197F1351004B16F4 /* LPHTTPRedirectResponse.m in Sources */,
 				B113582E197F0C41004B16F4 /* CDataScanner_Extensions.m in Sources */,
+				F5172594198522C500705621 /* LPUIARouteHostCat.m in Sources */,
 				B11358631981B053004B16F4 /* LPScrollOperation.m in Sources */,
 				B113583B197F1351004B16F4 /* LPHTTPAuthenticationRequest.m in Sources */,
-				B1135837197F10B7004B16F4 /* LPUIARoute.m in Sources */,
+				B1135837197F10B7004B16F4 /* LPUIARouteUserPrefs.m in Sources */,
 				B11358601981B053004B16F4 /* LPQueryAllOperation.m in Sources */,
 				B11358651981B053004B16F4 /* LPSetTextOperation.m in Sources */,
 				B11358611981B053004B16F4 /* LPOperation.m in Sources */,
@@ -1296,8 +1308,9 @@
 				F5091BF318C4E1D700C85307 /* LPUIAChannel.m in Sources */,
 				F5091BF418C4E1D700C85307 /* LPRecorder.m in Sources */,
 				F5B27B9118C5884D0049B5FF /* CalabashServer.m in Sources */,
-				F5091BF518C4E1D700C85307 /* LPUIARoute.m in Sources */,
+				F5091BF518C4E1D700C85307 /* LPUIARouteUserPrefs.m in Sources */,
 				F5091BF618C4E1D700C85307 /* LPUserPrefRoute.m in Sources */,
+				F51725901985223300705621 /* LPUIARouteHostCat.m in Sources */,
 				F5091BF718C4E1D700C85307 /* LPKeyboardRoute.m in Sources */,
 				F5091BF818C4E1D700C85307 /* LPGenericAsyncRoute.m in Sources */,
 				F5091BF918C4E1D700C85307 /* LPConditionRoute.m in Sources */,
@@ -1390,8 +1403,9 @@
 				F5821A1118C4E27400293508 /* LPUIAChannel.m in Sources */,
 				F5821A1218C4E27400293508 /* LPRecorder.m in Sources */,
 				F5B27B9218C5884E0049B5FF /* CalabashServer.m in Sources */,
-				F5821A1318C4E27400293508 /* LPUIARoute.m in Sources */,
+				F5821A1318C4E27400293508 /* LPUIARouteUserPrefs.m in Sources */,
 				F5821A1418C4E27400293508 /* LPUserPrefRoute.m in Sources */,
+				F51725911985223300705621 /* LPUIARouteHostCat.m in Sources */,
 				F5821A1518C4E27400293508 /* LPKeyboardRoute.m in Sources */,
 				F5821A1618C4E27400293508 /* LPGenericAsyncRoute.m in Sources */,
 				F5821A1718C4E27400293508 /* LPConditionRoute.m in Sources */,

@@ -9,7 +9,8 @@
 #import "LPCalabashFrankRegistrar.h"
 #import "UIScriptParser.h"
 #import "LPTouchUtils.h"
-#import "LPUIARoute.h"
+#import "LPUIARouteUserPrefs.h"
+#import "LPUIARouteHostCat.h"
 #import "LPVersionRoute.h"
 #import "LPJSONUtils.h"
 #import "LPMapRoute.h"
@@ -33,10 +34,14 @@ static NSString *const selectorName = @"calabash_uispec";
 #pragma clang diagnostic ignored "-Wobjc-method-access"
   id frankRouter = [c performSelector:@selector(singleton)];
   NSLog(@"Router: %@", frankRouter);
-  
-  LPUIARoute *uiaRoute = [LPUIARoute new];
-  [frankRouter registerRoute:uiaRoute];
-  [uiaRoute release];
+
+  LPUIARouteUserPrefs *uiaFast = [LPUIARouteUserPrefs new];
+  [frankRouter registerRoute:uiaFast];
+  [uiaFast release];
+
+  LPUIARouteHostCat *uiaHostCat = [LPUIARouteHostCat new];
+  [frankRouter registerRoute:uiaHostCat];
+  [uiaHostCat release];
 
   LPVersionRoute *versionRoute = [LPVersionRoute new];
   [frankRouter registerRoute:versionRoute];

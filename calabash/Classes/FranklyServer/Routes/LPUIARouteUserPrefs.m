@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Xamarin. All rights reserved.
 //
 
-#import "LPUIARoute.h"
+#import "LPUIARouteUserPrefs.h"
 #import "LPUIAChannel.h"
 #import "LPJSONUtils.h"
 
-@implementation LPUIARoute
+@implementation LPUIARouteUserPrefs
 
 - (BOOL) supportsMethod:(NSString *) method atPath:(NSString *) path {
   return [method isEqualToString:@"POST"];
