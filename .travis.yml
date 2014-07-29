@@ -1,0 +1,11 @@
+language: objective-c
+
+script:
+  - cd scripts && make-framework.rb
+  - make
+
+rvm:
+  - 2.1.1
+
+notifications:
+  email: false
